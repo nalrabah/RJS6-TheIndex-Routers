@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // Logo
 import logo from "./assets/theindex.svg";
@@ -12,6 +12,9 @@ class Sidebar extends Component {
         <section>
           <h4 className="menu-item">
             <NavLink to="/authors">AUTHORS</NavLink>
+          </h4>
+          <h4 className="menu-item">
+            <Link to="/books">BOOKS</Link>
           </h4>
         </section>
       </div>
